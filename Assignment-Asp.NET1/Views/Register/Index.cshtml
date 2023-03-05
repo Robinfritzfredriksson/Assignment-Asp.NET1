@@ -1,0 +1,19 @@
+﻿@model Assignment_Asp.NET1.Models.Forms.RegisterForm
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout_CenterScreen.cshtml";
+}
+
+
+<section class="registerform">
+    <div class="title">
+        <div class="headline">
+            <span> Please Register an Account</span>
+            <div class="underline"></div>
+        </div>
+    </div>
+    <partial name="~/Views/Shared/Partials/Forms/_RegisterFormPartial.cshtml" model="@Model" />
+
+</section>
+

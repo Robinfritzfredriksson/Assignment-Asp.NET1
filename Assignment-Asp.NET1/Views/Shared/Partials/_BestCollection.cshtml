@@ -1,0 +1,52 @@
+﻿@using Assignment_Asp.NET1.Models.Products;
+@model List<ProductEntity>
+
+<h2 class="collection">Best collection</h2>
+<br>
+<p class="item-page2">All ⁄ Bags ⁄ Dress ⁄ Decoration ⁄ Essentials ⁄ Interior ⁄ Laptop ⁄ Mobile ⁄ Beauty</p>
+<div class="gap">
+    <div class="container d-flex justify-content-between">
+
+        @foreach(var product in Model)
+        {
+            <div class="favs">
+                <div class="squares-picture">
+                    <img class="imgmini" src="~/image/@product.ImageUrl" alt="Image">
+                </div>
+                <div class="squares-info">
+                    <h4 class="titleh4">@product.Name</h4>
+                    <h3 class="price">@product.Price$</h3>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="gap">
+    <div class="container d-flex justify-content-between">
+
+        @foreach (var product in Model)
+        {
+                <div class="favs">
+                    <div class="squares-picture">
+                        <img class="imgmini" src="~/image/@product.ImageUrl" alt="Image">
+                    </div>
+                    <div class="squares-info">
+                        <h4 class="titleh4">@product.Name</h4>
+                        <h3 class="price">@product.Price$</h3>
+                    </div>
+                </div>
+        }
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container">
+    <div class="hej d-flex">
+        <button class="button-middle">LOAD MORE</button>
+    </div>
+</div>
